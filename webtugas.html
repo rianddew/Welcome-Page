@@ -1,0 +1,130 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas Teknologi Informasi</title>
+  <style>
+    /* Reset semua margin dan padding bawaan browser */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }/* Pengaturan body utama */
+body {
+  overflow: hidden; /* supaya tidak ada scroll */
+  font-family: Arial, sans-serif; /* font utama */
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* Container landing page full layar + background image */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('background.png') center/cover no-repeat;
+}
+
+/* Posisi judul welcome di tengah atas */
+.title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Style tulisan Welcome */
+.title h1 {
+  font-size: 120px;
+  font-weight: 500;
+  color: #000;
+  line-height: 0.95;
+  letter-spacing: -2px;
+}
+
+/* Style tulisan kuning subtitle */
+.subtitle {
+  margin-top: -10px; /* mendekatkan ke Welcome */
+  margin-left: 90px; /* geser sedikit ke kanan */
+  display: inline-block;
+  background: #f5df46;
+  padding: 6px 28px;
+  font-size: 76px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+  border-radius: 2px;
+  line-height: 1.1;
+}
+
+/* Tombol gambar navigasi */
+.nav-btn {
+  position: absolute;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+/* Efek hover icon membesar */
+.nav-btn:hover {
+  transform: scale(1.08);
+}
+
+/* Ukuran gambar icon */
+.nav-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
+}
+
+/* Posisi masing-masing icon menu */
+.home { width: 140px; left: 20%; top: 40%; }
+.penerapan { width: 150px; left: 35%; top: 55%; }
+.kesan { width: 155px; left: 50%; top: 55%; }
+.keunikan { width: 145px; left: 65%; top: 53%; }
+.gamee { width: 140px; left: 79%; top: 40%; }
+
+/* Responsive untuk layar HP */
+@media (max-width: 900px) {
+  .title h1 { font-size: 70px; }
+  .subtitle { font-size: 44px; }
+  .home, .penerapan, .kesan, .keunikan, .gamee { width: 90px; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Judul utama landing page -->
+    <div class="title">
+      <h1>Welcome</h1>
+      <div class="subtitle">to our website!</div>
+    </div><!-- Tombol menuju halaman Home -->
+<a href="home.html" class="nav-btn home">
+  <img src="homee.png" alt="Home">
+</a>
+
+<!-- Tombol menuju halaman Penerapan -->
+<a href="penerapan.html" class="nav-btn penerapan">
+  <img src="penerapann.png" alt="Penerapan">
+</a>
+
+<!-- Tombol menuju halaman Kesan -->
+<a href="kesan.html" class="nav-btn kesan">
+  <img src="kesann.png" alt="Kesan">
+</a>
+
+<!-- Tombol menuju halaman Keunikan -->
+<a href="keunikan.html" class="nav-btn keunikan">
+  <img src="keunikann.png" alt="Keunikan">
+</a>
+
+<!-- Tombol menuju halaman Game -->
+<a href="game.html" class="nav-btn gamee">
+  <img src="game2.png" alt="Gamee">
+</a>
+
+  </div>
+</body>
+</html>
